@@ -10,6 +10,7 @@ def mergeSort(A):
         i = 0
         j = 0
         k = 0
+
         while i < len(lefthalf) and j < len(righthalf):
             if lefthalf[i] < righthalf[j]:
                 A[k] = lefthalf[i]
@@ -30,6 +31,6 @@ def mergeSort(A):
             k += 1
     return A
 
-A = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+A = [5, 6, 12, 8, 4, 10, 3, 12, 11, 1]
 
 print(mergeSort(A))

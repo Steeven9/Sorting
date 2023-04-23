@@ -1,4 +1,7 @@
-def selectionSort(A):
+from constants import test_array
+
+
+def selection_sort(A):
     for i in range(len(A) - 1):
         smallest = i
         for j in range(i + 1, len(A)):
@@ -8,6 +11,5 @@ def selectionSort(A):
         print(A)
     return A
 
-A = [5, 6, 12, 8, 4, 10, 3, 12, 11, 1]
 
-selectionSort(A)
+selection_sort(test_array)

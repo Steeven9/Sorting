@@ -2,6 +2,10 @@
 
 A collection of sorting algorithms done in Python.
 
+## Useful resources
+
+[Sorting algorithms visualized](https://www.toptal.com/developers/sorting-algorithms)
+
 ## Quack sort
 
 ![alt text](img/quackSort.png "Quack sort")

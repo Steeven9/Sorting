@@ -1,4 +1,7 @@
-def maxHeapify(A, x):
+from constants import test_array
+
+
+def max_heapify(A, x):
     l = 2 * x
     r = 2 * x + 1
     if l < size and A[l] > A[x]:
@@ -11,23 +14,24 @@ def maxHeapify(A, x):
 
     if largest != x:
         A[x], A[largest] = A[largest], A[x]
-        maxHeapify(A, largest)
+        max_heapify(A, largest)
 
-def buildMaxHeap(A):
+
+def build_max_heap(A):
     for i in range(len(A) // 2, -1, -1):
-        maxHeapify(A, i)
+        max_heapify(A, i)
 
-def heapSort(A):
+
+def heap_sort(A):
     global size
 
-    buildMaxHeap(A)
+    build_max_heap(A)
     for i in range(len(A) - 1, 0, -1):
         A[i], A[0] = A[0], A[i]
         size -= 1
-        maxHeapify(A, 0)
+        max_heapify(A, 0)
         print(A)
 
-A = [5, 6, 12, 8, 4, 10, 3, 12, 11, 1]
-size = len(A)
 
-heapSort(A)
+size = len(test_array)
+heap_sort(test_array)

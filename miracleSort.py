@@ -1,15 +1,17 @@
-def miracleSort(A):
-    sorted = True
+from constants import test_array
+
+
+def miracle_sort(A):
+    is_sorted = True
 
     for i in range(len(A) - 1):
         if (A[i] < A[i + 1]):
-            sorted = False
+            is_sorted = False
 
-    if (sorted):
+    if is_sorted:
         return A
     else:
-        miracleSort(A)
+        miracle_sort(A)
 
-A = [5, 6, 12, 8, 4, 10, 3, 12, 11, 1]
 
-miracleSort(A)
+miracle_sort(test_array)

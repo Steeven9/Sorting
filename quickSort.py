@@ -1,3 +1,6 @@
+from constants import test_array
+
+
 def partition(A, begin, end):
     x = A[end]
     i = begin - 1
@@ -10,13 +13,13 @@ def partition(A, begin, end):
     print(A)
     return i + 1
 
-def quickSort(A, begin, end):
+
+def quick_sort(A, begin, end):
     if begin < end:
         q = partition(A, begin, end)
-        quickSort(A, begin, q - 1)
-        quickSort(A, q + 1, end)
+        quick_sort(A, begin, q - 1)
+        quick_sort(A, q + 1, end)
     return A
 
-A = [5, 6, 12, 8, 4, 10, 3, 12, 11, 1]
 
-quickSort(A, 0, len(A) - 1)
+quick_sort(test_array, 0, len(test_array) - 1)

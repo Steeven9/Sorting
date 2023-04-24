@@ -1,6 +1,9 @@
 from constants import test_array
 
 
+# complexity: O(n log(n))
+# in-place: true
+# https://en.wikipedia.org/wiki/Heapsort
 def max_heapify(A, x):
     l = 2 * x
     r = 2 * x + 1

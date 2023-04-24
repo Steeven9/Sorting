@@ -1,6 +1,9 @@
 from constants import test_array
 
 
+# complexity: O(n log(n)) average, O(n^2) worst
+# in-place: true
+# https://en.wikipedia.org/wiki/Quicksort
 def partition(A, begin, end):
     x = A[end]
     i = begin - 1

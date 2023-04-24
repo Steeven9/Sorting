@@ -1,0 +1,18 @@
+# MS Office
+~$*
+
+# System
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# IDEs
+.vscode/
+.vs/
+.idea/
+
+# Python
+*.pyc
+__pycache__/
+.pytest_cache/
+.nltk

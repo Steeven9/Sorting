@@ -1,6 +1,9 @@
 from constants import test_array
 
 
+# complexity: O(n log(n))
+# in-place: false
+# https://en.wikipedia.org/wiki/Merge_sort
 def merge_sort(A):
     if len(A) > 1:
         print("called with ", A)

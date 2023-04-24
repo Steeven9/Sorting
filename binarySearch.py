@@ -1,6 +1,7 @@
 from constants import test_array
 
 
+# https://en.wikipedia.org/wiki/Binary_search_tree#Searching
 def binary_search(A, x):
     # Assume A is sorted
     m = len(A) // 2

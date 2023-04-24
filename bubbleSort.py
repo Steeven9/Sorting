@@ -1,6 +1,9 @@
 from constants import test_array
 
 
+# complexity: O(n^2)
+# in-place: true
+# https://en.wikipedia.org/wiki/Bubble_sort
 def bubble_sort(A):
     for i in range(len(A)):
         for j in range(len(A) - 1, i, -1):
